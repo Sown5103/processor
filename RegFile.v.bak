@@ -1,0 +1,12 @@
+module register32x32(
+input rwe, clk, 
+input [4:0] ra1, ra2, wa, wd,
+output [4:0] rd1, rd2
+);
+reg [4:0] register_file[31:0]; 
+always @(posedge clk)
+	if (rwe) register_file[wa]=wd;
+	
+assign rd1 = rwe ? register_file[ra1]:5'bz;
+assign rd2 = rwe ? register_file[ra2]:5'bz;
+endmodule

@@ -1,0 +1,6 @@
+module datapath(
+input RegDst, RegWrite, ALUSrc, ALUControl, MemWrite, MemToReg, MemRead,
+input [31:0] Inst,
+
+);
+

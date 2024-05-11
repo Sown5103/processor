@@ -1,0 +1,15 @@
+module ALU_Control(ALUop, ALUControl);
+input[1:0] ALUop;
+output reg[2:0] ALUControl;
+
+always @ (*)
+begin
+	case (ALUop)
+	0: ALUControl = 1;
+	1: ALUControl = 3;
+	2: ALUControl = 5;
+	3: ALUControl = 6;
+	default: ALUControl = 0;
+	endcase
+end
+endmodule

@@ -1,0 +1,112 @@
+# Reading D:/quatus/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do lab4_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\quatus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\quatus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/Mux21_32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux21_32
+# 
+# Top level modules:
+# 	Mux21_32
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/RegFile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/sram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sram
+# 
+# Top level modules:
+# 	sram
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/signextend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/Mux21_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux21_5
+# 
+# Top level modules:
+# 	Mux21_5
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/ALUCtrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALUCtrl
+# 
+# Top level modules:
+# 	ALUCtrl
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/processor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# 
+# vlog -vlog01compat -work work +incdir+D:/hdl/week4th {D:/hdl/week4th/processor_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps processor_tb 
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.controller
+# Loading work.ALUCtrl
+# Loading work.datapath
+# Loading work.Mux21_5
+# Loading work.RegFile
+# Loading work.signextend
+# Loading work.Mux21_32
+# Loading work.ALU
+# Loading work.sram
+# ** Warning: (vsim-3015) D:/hdl/week4th/processor.v(23): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'Inst'. The port definition is at: D:/hdl/week4th/datapath.v(4).
+# 
+#         Region: /processor_tb/uut/Dtph
+# ** Warning: (vsim-3017) D:/hdl/week4th/datapath.v(14): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /processor_tb/uut/Dtph/ALU
+# ** Warning: (vsim-3722) D:/hdl/week4th/datapath.v(14): [TFMPC] - Missing connection for port 'overflow'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module processor_tb at D:/hdl/week4th/processor_tb.v line 17
+# Simulation Breakpoint: Break in Module processor_tb at D:/hdl/week4th/processor_tb.v line 17
+# MACRO ./lab4_run_msim_rtl_verilog.do PAUSED at line 26

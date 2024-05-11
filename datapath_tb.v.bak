@@ -1,0 +1,44 @@
+`timescale 1ns / 1ps
+
+module datapath_tb;
+
+reg RegDst, RegWrite, ALUSrc, MemWrite, MemToReg, MemRead, clk;
+reg [2:0] ALUControl;
+reg [25:0] Inst;
+wire [31:0] RD;
+
+datapath dut (
+  .RegDst(RegDst),
+  .RegWrite(RegWrite),
+  .ALUSrc(ALUSrc),
+  .MemWrite(MemWrite),
+  .MemToReg(MemToReg),
+  .MemRead(MemRead),
+  .clk(clk),
+  .ALUControl(ALUControl),
+  .Inst(Inst),
+  .RD(RD)
+);
+
+initial begin
+  // Test case 1
+  RegDst = 1;
+  RegWrite = 1;
+  ALUSrc = 0;
+  MemWrite = 0;
+  MemToReg = 0;
+  MemRead = 0;
+  clk = 0;
+  ALUControl = 3'b000; // Set your desired ALU control value
+  Inst = 26'b00000001001010100100000000100000; // Set your desired instruction value
+
+  #10;
+
+  // Add more test cases as needed
+
+  $stop;
+end
+
+always #5 clk = ~clk;
+
+endmodule

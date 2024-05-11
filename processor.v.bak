@@ -1,0 +1,45 @@
+module MIPS(Inst, clk, reset, isZero);
+input[31:0] Inst;
+input clk, reset;
+output isZero;
+
+wire RegDst;
+wire[1:0] ALUop;
+wire[2:0] ALUctrl;
+wire MemRead;
+wire MemWrite;
+wire MemtoReg;
+wire ALUsrc;
+wire RegWrite;
+
+
+Control_Unit control_unit(
+								.opcode(Inst[31:26]), 
+								.RegDst(RegDst), 
+								.ALUop(ALUop), 
+								.MemRead(MemRead), 
+								.MemWrite(MemWrite), 
+								.MemtoReg(MemtoReg),
+								.ALUsrc(ALUsrc), 
+								.RegWrite(RegWrite), 
+								.reset(reset)
+								);
+		
+ALU_Control alu_control(
+								.ALUop(ALUop), 
+								.ALUctrl(ALUctrl)
+								);
+								
+Datapath datapath(
+						.Inst(Inst), 
+						.RegDst(RegDst), 
+						.RegWrite(RegWrite), 
+						.ALUsrc(ALUsrc), 
+						.ALUctrl(ALUctrl), 
+						.MemWrite(MemWrite), 
+						.MemRead(MemRead), 
+						.MemtoReg(MemtoReg), 
+						.clk(clk), 
+						.isZero(isZero)
+						);
+endmodule

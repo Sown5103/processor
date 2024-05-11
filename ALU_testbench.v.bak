@@ -1,0 +1,26 @@
+`timescale 1ns/100ps
+module ALU_testbench
+
+reg signed [31:0] A;
+reg signed [31:0] B;
+reg signed [2:0] s;
+ 
+wire [31:0] result;
+wire overflow;
+
+ALU uut(
+.A(A),
+.B(B),
+.s(s),
+.result(result),
+.overflow(overflow),
+);
+
+initial begin
+	A=5;
+	B=8;
+	s=3'b001
+	#10
+	$stop
+end
+endmodule

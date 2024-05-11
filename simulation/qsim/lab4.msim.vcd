@@ -1,0 +1,885 @@
+$comment
+	File created using the following command:
+		vcd file lab4.msim.vcd -direction
+$end
+$date
+	Wed Dec 06 21:34:09 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module sram_vlg_vec_tst $end
+$var reg 32 ! a [31:0] $end
+$var reg 1 " clk $end
+$var reg 1 # re $end
+$var reg 32 $ wd [31:0] $end
+$var reg 1 % we $end
+$var wire 1 & rd [31] $end
+$var wire 1 ' rd [30] $end
+$var wire 1 ( rd [29] $end
+$var wire 1 ) rd [28] $end
+$var wire 1 * rd [27] $end
+$var wire 1 + rd [26] $end
+$var wire 1 , rd [25] $end
+$var wire 1 - rd [24] $end
+$var wire 1 . rd [23] $end
+$var wire 1 / rd [22] $end
+$var wire 1 0 rd [21] $end
+$var wire 1 1 rd [20] $end
+$var wire 1 2 rd [19] $end
+$var wire 1 3 rd [18] $end
+$var wire 1 4 rd [17] $end
+$var wire 1 5 rd [16] $end
+$var wire 1 6 rd [15] $end
+$var wire 1 7 rd [14] $end
+$var wire 1 8 rd [13] $end
+$var wire 1 9 rd [12] $end
+$var wire 1 : rd [11] $end
+$var wire 1 ; rd [10] $end
+$var wire 1 < rd [9] $end
+$var wire 1 = rd [8] $end
+$var wire 1 > rd [7] $end
+$var wire 1 ? rd [6] $end
+$var wire 1 @ rd [5] $end
+$var wire 1 A rd [4] $end
+$var wire 1 B rd [3] $end
+$var wire 1 C rd [2] $end
+$var wire 1 D rd [1] $end
+$var wire 1 E rd [0] $end
+$var wire 1 F sampler $end
+$scope module i1 $end
+$var wire 1 G gnd $end
+$var wire 1 H vcc $end
+$var wire 1 I unknown $end
+$var tri1 1 J devclrn $end
+$var tri1 1 K devpor $end
+$var tri1 1 L devoe $end
+$var wire 1 M sram_rtl_0|auto_generated|decode2|eq_node[1]~0_combout $end
+$var wire 1 N sram_rtl_0|auto_generated|decode2|eq_node[0]~1_combout $end
+$var wire 1 O we~combout $end
+$var wire 1 P clk~combout $end
+$var wire 1 Q sram_rtl_0|auto_generated|ram_block1a32~portbdataout $end
+$var wire 1 R sram_rtl_0|auto_generated|ram_block1a0~portbdataout $end
+$var wire 1 S sram_rtl_0|auto_generated|mux3|result_node[0]~0_combout $end
+$var wire 1 T re~combout $end
+$var wire 1 U rd[3]~32_combout $end
+$var wire 1 V rd[0]~en_regout $end
+$var wire 1 W sram_rtl_0|auto_generated|ram_block1a33~portbdataout $end
+$var wire 1 X sram_rtl_0|auto_generated|ram_block1a1~portbdataout $end
+$var wire 1 Y sram_rtl_0|auto_generated|mux3|result_node[1]~1_combout $end
+$var wire 1 Z rd[1]~en_regout $end
+$var wire 1 [ sram_rtl_0|auto_generated|ram_block1a34~portbdataout $end
+$var wire 1 \ sram_rtl_0|auto_generated|ram_block1a2~portbdataout $end
+$var wire 1 ] sram_rtl_0|auto_generated|mux3|result_node[2]~2_combout $end
+$var wire 1 ^ rd[2]~en_regout $end
+$var wire 1 _ sram_rtl_0|auto_generated|ram_block1a35~portbdataout $end
+$var wire 1 ` sram_rtl_0|auto_generated|ram_block1a3~portbdataout $end
+$var wire 1 a sram_rtl_0|auto_generated|mux3|result_node[3]~3_combout $end
+$var wire 1 b rd[3]~en_regout $end
+$var wire 1 c sram_rtl_0|auto_generated|ram_block1a36~portbdataout $end
+$var wire 1 d sram_rtl_0|auto_generated|ram_block1a4~portbdataout $end
+$var wire 1 e sram_rtl_0|auto_generated|mux3|result_node[4]~4_combout $end
+$var wire 1 f rd[4]~en_regout $end
+$var wire 1 g sram_rtl_0|auto_generated|ram_block1a37~portbdataout $end
+$var wire 1 h sram_rtl_0|auto_generated|ram_block1a5~portbdataout $end
+$var wire 1 i sram_rtl_0|auto_generated|mux3|result_node[5]~5_combout $end
+$var wire 1 j rd[5]~en_regout $end
+$var wire 1 k sram_rtl_0|auto_generated|ram_block1a38~portbdataout $end
+$var wire 1 l sram_rtl_0|auto_generated|ram_block1a6~portbdataout $end
+$var wire 1 m sram_rtl_0|auto_generated|mux3|result_node[6]~6_combout $end
+$var wire 1 n rd[6]~en_regout $end
+$var wire 1 o sram_rtl_0|auto_generated|ram_block1a39~portbdataout $end
+$var wire 1 p sram_rtl_0|auto_generated|ram_block1a7~portbdataout $end
+$var wire 1 q sram_rtl_0|auto_generated|mux3|result_node[7]~7_combout $end
+$var wire 1 r rd[7]~en_regout $end
+$var wire 1 s sram_rtl_0|auto_generated|ram_block1a40~portbdataout $end
+$var wire 1 t sram_rtl_0|auto_generated|ram_block1a8~portbdataout $end
+$var wire 1 u sram_rtl_0|auto_generated|mux3|result_node[8]~8_combout $end
+$var wire 1 v rd[8]~en_regout $end
+$var wire 1 w sram_rtl_0|auto_generated|ram_block1a41~portbdataout $end
+$var wire 1 x sram_rtl_0|auto_generated|ram_block1a9~portbdataout $end
+$var wire 1 y sram_rtl_0|auto_generated|mux3|result_node[9]~9_combout $end
+$var wire 1 z rd[9]~en_regout $end
+$var wire 1 { sram_rtl_0|auto_generated|ram_block1a42~portbdataout $end
+$var wire 1 | sram_rtl_0|auto_generated|ram_block1a10~portbdataout $end
+$var wire 1 } sram_rtl_0|auto_generated|mux3|result_node[10]~10_combout $end
+$var wire 1 ~ rd[10]~en_regout $end
+$var wire 1 !! sram_rtl_0|auto_generated|ram_block1a43~portbdataout $end
+$var wire 1 "! sram_rtl_0|auto_generated|ram_block1a11~portbdataout $end
+$var wire 1 #! sram_rtl_0|auto_generated|mux3|result_node[11]~11_combout $end
+$var wire 1 $! rd[11]~en_regout $end
+$var wire 1 %! sram_rtl_0|auto_generated|ram_block1a44~portbdataout $end
+$var wire 1 &! sram_rtl_0|auto_generated|ram_block1a12~portbdataout $end
+$var wire 1 '! sram_rtl_0|auto_generated|mux3|result_node[12]~12_combout $end
+$var wire 1 (! rd[12]~en_regout $end
+$var wire 1 )! sram_rtl_0|auto_generated|ram_block1a45~portbdataout $end
+$var wire 1 *! sram_rtl_0|auto_generated|ram_block1a13~portbdataout $end
+$var wire 1 +! sram_rtl_0|auto_generated|mux3|result_node[13]~13_combout $end
+$var wire 1 ,! rd[13]~en_regout $end
+$var wire 1 -! sram_rtl_0|auto_generated|ram_block1a46~portbdataout $end
+$var wire 1 .! sram_rtl_0|auto_generated|ram_block1a14~portbdataout $end
+$var wire 1 /! sram_rtl_0|auto_generated|mux3|result_node[14]~14_combout $end
+$var wire 1 0! rd[14]~en_regout $end
+$var wire 1 1! sram_rtl_0|auto_generated|ram_block1a47~portbdataout $end
+$var wire 1 2! sram_rtl_0|auto_generated|ram_block1a15~portbdataout $end
+$var wire 1 3! sram_rtl_0|auto_generated|mux3|result_node[15]~15_combout $end
+$var wire 1 4! rd[15]~en_regout $end
+$var wire 1 5! sram_rtl_0|auto_generated|ram_block1a48~portbdataout $end
+$var wire 1 6! sram_rtl_0|auto_generated|ram_block1a16~portbdataout $end
+$var wire 1 7! sram_rtl_0|auto_generated|mux3|result_node[16]~16_combout $end
+$var wire 1 8! rd[16]~en_regout $end
+$var wire 1 9! sram_rtl_0|auto_generated|ram_block1a49~portbdataout $end
+$var wire 1 :! sram_rtl_0|auto_generated|ram_block1a17~portbdataout $end
+$var wire 1 ;! sram_rtl_0|auto_generated|mux3|result_node[17]~17_combout $end
+$var wire 1 <! rd[17]~en_regout $end
+$var wire 1 =! sram_rtl_0|auto_generated|ram_block1a50~portbdataout $end
+$var wire 1 >! sram_rtl_0|auto_generated|ram_block1a18~portbdataout $end
+$var wire 1 ?! sram_rtl_0|auto_generated|mux3|result_node[18]~18_combout $end
+$var wire 1 @! rd[18]~en_regout $end
+$var wire 1 A! sram_rtl_0|auto_generated|ram_block1a51~portbdataout $end
+$var wire 1 B! sram_rtl_0|auto_generated|ram_block1a19~portbdataout $end
+$var wire 1 C! sram_rtl_0|auto_generated|mux3|result_node[19]~19_combout $end
+$var wire 1 D! rd[19]~en_regout $end
+$var wire 1 E! sram_rtl_0|auto_generated|ram_block1a52~portbdataout $end
+$var wire 1 F! sram_rtl_0|auto_generated|ram_block1a20~portbdataout $end
+$var wire 1 G! sram_rtl_0|auto_generated|mux3|result_node[20]~20_combout $end
+$var wire 1 H! rd[20]~en_regout $end
+$var wire 1 I! sram_rtl_0|auto_generated|ram_block1a53~portbdataout $end
+$var wire 1 J! sram_rtl_0|auto_generated|ram_block1a21~portbdataout $end
+$var wire 1 K! sram_rtl_0|auto_generated|mux3|result_node[21]~21_combout $end
+$var wire 1 L! rd[21]~en_regout $end
+$var wire 1 M! sram_rtl_0|auto_generated|ram_block1a54~portbdataout $end
+$var wire 1 N! sram_rtl_0|auto_generated|ram_block1a22~portbdataout $end
+$var wire 1 O! sram_rtl_0|auto_generated|mux3|result_node[22]~22_combout $end
+$var wire 1 P! rd[22]~en_regout $end
+$var wire 1 Q! sram_rtl_0|auto_generated|ram_block1a55~portbdataout $end
+$var wire 1 R! sram_rtl_0|auto_generated|ram_block1a23~portbdataout $end
+$var wire 1 S! sram_rtl_0|auto_generated|mux3|result_node[23]~23_combout $end
+$var wire 1 T! rd[23]~en_regout $end
+$var wire 1 U! sram_rtl_0|auto_generated|ram_block1a56~portbdataout $end
+$var wire 1 V! sram_rtl_0|auto_generated|ram_block1a24~portbdataout $end
+$var wire 1 W! sram_rtl_0|auto_generated|mux3|result_node[24]~24_combout $end
+$var wire 1 X! rd[24]~en_regout $end
+$var wire 1 Y! sram_rtl_0|auto_generated|ram_block1a57~portbdataout $end
+$var wire 1 Z! sram_rtl_0|auto_generated|ram_block1a25~portbdataout $end
+$var wire 1 [! sram_rtl_0|auto_generated|mux3|result_node[25]~25_combout $end
+$var wire 1 \! rd[25]~en_regout $end
+$var wire 1 ]! sram_rtl_0|auto_generated|ram_block1a58~portbdataout $end
+$var wire 1 ^! sram_rtl_0|auto_generated|ram_block1a26~portbdataout $end
+$var wire 1 _! sram_rtl_0|auto_generated|mux3|result_node[26]~26_combout $end
+$var wire 1 `! rd[26]~en_regout $end
+$var wire 1 a! sram_rtl_0|auto_generated|ram_block1a59~portbdataout $end
+$var wire 1 b! sram_rtl_0|auto_generated|ram_block1a27~portbdataout $end
+$var wire 1 c! sram_rtl_0|auto_generated|mux3|result_node[27]~27_combout $end
+$var wire 1 d! rd[27]~en_regout $end
+$var wire 1 e! sram_rtl_0|auto_generated|ram_block1a60~portbdataout $end
+$var wire 1 f! sram_rtl_0|auto_generated|ram_block1a28~portbdataout $end
+$var wire 1 g! sram_rtl_0|auto_generated|mux3|result_node[28]~28_combout $end
+$var wire 1 h! rd[28]~en_regout $end
+$var wire 1 i! sram_rtl_0|auto_generated|ram_block1a61~portbdataout $end
+$var wire 1 j! sram_rtl_0|auto_generated|ram_block1a29~portbdataout $end
+$var wire 1 k! sram_rtl_0|auto_generated|mux3|result_node[29]~29_combout $end
+$var wire 1 l! rd[29]~en_regout $end
+$var wire 1 m! sram_rtl_0|auto_generated|ram_block1a62~portbdataout $end
+$var wire 1 n! sram_rtl_0|auto_generated|ram_block1a30~portbdataout $end
+$var wire 1 o! sram_rtl_0|auto_generated|mux3|result_node[30]~30_combout $end
+$var wire 1 p! rd[30]~en_regout $end
+$var wire 1 q! sram_rtl_0|auto_generated|ram_block1a63~portbdataout $end
+$var wire 1 r! sram_rtl_0|auto_generated|ram_block1a31~portbdataout $end
+$var wire 1 s! sram_rtl_0|auto_generated|mux3|result_node[31]~31_combout $end
+$var wire 1 t! rd[31]~en_regout $end
+$var wire 1 u! wd~combout [31] $end
+$var wire 1 v! wd~combout [30] $end
+$var wire 1 w! wd~combout [29] $end
+$var wire 1 x! wd~combout [28] $end
+$var wire 1 y! wd~combout [27] $end
+$var wire 1 z! wd~combout [26] $end
+$var wire 1 {! wd~combout [25] $end
+$var wire 1 |! wd~combout [24] $end
+$var wire 1 }! wd~combout [23] $end
+$var wire 1 ~! wd~combout [22] $end
+$var wire 1 !" wd~combout [21] $end
+$var wire 1 "" wd~combout [20] $end
+$var wire 1 #" wd~combout [19] $end
+$var wire 1 $" wd~combout [18] $end
+$var wire 1 %" wd~combout [17] $end
+$var wire 1 &" wd~combout [16] $end
+$var wire 1 '" wd~combout [15] $end
+$var wire 1 (" wd~combout [14] $end
+$var wire 1 )" wd~combout [13] $end
+$var wire 1 *" wd~combout [12] $end
+$var wire 1 +" wd~combout [11] $end
+$var wire 1 ," wd~combout [10] $end
+$var wire 1 -" wd~combout [9] $end
+$var wire 1 ." wd~combout [8] $end
+$var wire 1 /" wd~combout [7] $end
+$var wire 1 0" wd~combout [6] $end
+$var wire 1 1" wd~combout [5] $end
+$var wire 1 2" wd~combout [4] $end
+$var wire 1 3" wd~combout [3] $end
+$var wire 1 4" wd~combout [2] $end
+$var wire 1 5" wd~combout [1] $end
+$var wire 1 6" wd~combout [0] $end
+$var wire 1 7" a~combout [31] $end
+$var wire 1 8" a~combout [30] $end
+$var wire 1 9" a~combout [29] $end
+$var wire 1 :" a~combout [28] $end
+$var wire 1 ;" a~combout [27] $end
+$var wire 1 <" a~combout [26] $end
+$var wire 1 =" a~combout [25] $end
+$var wire 1 >" a~combout [24] $end
+$var wire 1 ?" a~combout [23] $end
+$var wire 1 @" a~combout [22] $end
+$var wire 1 A" a~combout [21] $end
+$var wire 1 B" a~combout [20] $end
+$var wire 1 C" a~combout [19] $end
+$var wire 1 D" a~combout [18] $end
+$var wire 1 E" a~combout [17] $end
+$var wire 1 F" a~combout [16] $end
+$var wire 1 G" a~combout [15] $end
+$var wire 1 H" a~combout [14] $end
+$var wire 1 I" a~combout [13] $end
+$var wire 1 J" a~combout [12] $end
+$var wire 1 K" a~combout [11] $end
+$var wire 1 L" a~combout [10] $end
+$var wire 1 M" a~combout [9] $end
+$var wire 1 N" a~combout [8] $end
+$var wire 1 O" a~combout [7] $end
+$var wire 1 P" a~combout [6] $end
+$var wire 1 Q" a~combout [5] $end
+$var wire 1 R" a~combout [4] $end
+$var wire 1 S" a~combout [3] $end
+$var wire 1 T" a~combout [2] $end
+$var wire 1 U" a~combout [1] $end
+$var wire 1 V" a~combout [0] $end
+$var wire 1 W" sram_rtl_0|auto_generated|address_reg_b [0] $end
+$var wire 1 X" sram_rtl_0|auto_generated|ram_block1a32_PORTBDATAOUT_bus [0] $end
+$var wire 1 Y" sram_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 Z" sram_rtl_0|auto_generated|ram_block1a33_PORTBDATAOUT_bus [0] $end
+$var wire 1 [" sram_rtl_0|auto_generated|ram_block1a1_PORTBDATAOUT_bus [0] $end
+$var wire 1 \" sram_rtl_0|auto_generated|ram_block1a34_PORTBDATAOUT_bus [0] $end
+$var wire 1 ]" sram_rtl_0|auto_generated|ram_block1a2_PORTBDATAOUT_bus [0] $end
+$var wire 1 ^" sram_rtl_0|auto_generated|ram_block1a35_PORTBDATAOUT_bus [0] $end
+$var wire 1 _" sram_rtl_0|auto_generated|ram_block1a3_PORTBDATAOUT_bus [0] $end
+$var wire 1 `" sram_rtl_0|auto_generated|ram_block1a36_PORTBDATAOUT_bus [0] $end
+$var wire 1 a" sram_rtl_0|auto_generated|ram_block1a4_PORTBDATAOUT_bus [0] $end
+$var wire 1 b" sram_rtl_0|auto_generated|ram_block1a37_PORTBDATAOUT_bus [0] $end
+$var wire 1 c" sram_rtl_0|auto_generated|ram_block1a5_PORTBDATAOUT_bus [0] $end
+$var wire 1 d" sram_rtl_0|auto_generated|ram_block1a38_PORTBDATAOUT_bus [0] $end
+$var wire 1 e" sram_rtl_0|auto_generated|ram_block1a6_PORTBDATAOUT_bus [0] $end
+$var wire 1 f" sram_rtl_0|auto_generated|ram_block1a39_PORTBDATAOUT_bus [0] $end
+$var wire 1 g" sram_rtl_0|auto_generated|ram_block1a7_PORTBDATAOUT_bus [0] $end
+$var wire 1 h" sram_rtl_0|auto_generated|ram_block1a40_PORTBDATAOUT_bus [0] $end
+$var wire 1 i" sram_rtl_0|auto_generated|ram_block1a8_PORTBDATAOUT_bus [0] $end
+$var wire 1 j" sram_rtl_0|auto_generated|ram_block1a41_PORTBDATAOUT_bus [0] $end
+$var wire 1 k" sram_rtl_0|auto_generated|ram_block1a9_PORTBDATAOUT_bus [0] $end
+$var wire 1 l" sram_rtl_0|auto_generated|ram_block1a42_PORTBDATAOUT_bus [0] $end
+$var wire 1 m" sram_rtl_0|auto_generated|ram_block1a10_PORTBDATAOUT_bus [0] $end
+$var wire 1 n" sram_rtl_0|auto_generated|ram_block1a43_PORTBDATAOUT_bus [0] $end
+$var wire 1 o" sram_rtl_0|auto_generated|ram_block1a11_PORTBDATAOUT_bus [0] $end
+$var wire 1 p" sram_rtl_0|auto_generated|ram_block1a44_PORTBDATAOUT_bus [0] $end
+$var wire 1 q" sram_rtl_0|auto_generated|ram_block1a12_PORTBDATAOUT_bus [0] $end
+$var wire 1 r" sram_rtl_0|auto_generated|ram_block1a45_PORTBDATAOUT_bus [0] $end
+$var wire 1 s" sram_rtl_0|auto_generated|ram_block1a13_PORTBDATAOUT_bus [0] $end
+$var wire 1 t" sram_rtl_0|auto_generated|ram_block1a46_PORTBDATAOUT_bus [0] $end
+$var wire 1 u" sram_rtl_0|auto_generated|ram_block1a14_PORTBDATAOUT_bus [0] $end
+$var wire 1 v" sram_rtl_0|auto_generated|ram_block1a47_PORTBDATAOUT_bus [0] $end
+$var wire 1 w" sram_rtl_0|auto_generated|ram_block1a15_PORTBDATAOUT_bus [0] $end
+$var wire 1 x" sram_rtl_0|auto_generated|ram_block1a48_PORTBDATAOUT_bus [0] $end
+$var wire 1 y" sram_rtl_0|auto_generated|ram_block1a16_PORTBDATAOUT_bus [0] $end
+$var wire 1 z" sram_rtl_0|auto_generated|ram_block1a49_PORTBDATAOUT_bus [0] $end
+$var wire 1 {" sram_rtl_0|auto_generated|ram_block1a17_PORTBDATAOUT_bus [0] $end
+$var wire 1 |" sram_rtl_0|auto_generated|ram_block1a50_PORTBDATAOUT_bus [0] $end
+$var wire 1 }" sram_rtl_0|auto_generated|ram_block1a18_PORTBDATAOUT_bus [0] $end
+$var wire 1 ~" sram_rtl_0|auto_generated|ram_block1a51_PORTBDATAOUT_bus [0] $end
+$var wire 1 !# sram_rtl_0|auto_generated|ram_block1a19_PORTBDATAOUT_bus [0] $end
+$var wire 1 "# sram_rtl_0|auto_generated|ram_block1a52_PORTBDATAOUT_bus [0] $end
+$var wire 1 ## sram_rtl_0|auto_generated|ram_block1a20_PORTBDATAOUT_bus [0] $end
+$var wire 1 $# sram_rtl_0|auto_generated|ram_block1a53_PORTBDATAOUT_bus [0] $end
+$var wire 1 %# sram_rtl_0|auto_generated|ram_block1a21_PORTBDATAOUT_bus [0] $end
+$var wire 1 &# sram_rtl_0|auto_generated|ram_block1a54_PORTBDATAOUT_bus [0] $end
+$var wire 1 '# sram_rtl_0|auto_generated|ram_block1a22_PORTBDATAOUT_bus [0] $end
+$var wire 1 (# sram_rtl_0|auto_generated|ram_block1a55_PORTBDATAOUT_bus [0] $end
+$var wire 1 )# sram_rtl_0|auto_generated|ram_block1a23_PORTBDATAOUT_bus [0] $end
+$var wire 1 *# sram_rtl_0|auto_generated|ram_block1a56_PORTBDATAOUT_bus [0] $end
+$var wire 1 +# sram_rtl_0|auto_generated|ram_block1a24_PORTBDATAOUT_bus [0] $end
+$var wire 1 ,# sram_rtl_0|auto_generated|ram_block1a57_PORTBDATAOUT_bus [0] $end
+$var wire 1 -# sram_rtl_0|auto_generated|ram_block1a25_PORTBDATAOUT_bus [0] $end
+$var wire 1 .# sram_rtl_0|auto_generated|ram_block1a58_PORTBDATAOUT_bus [0] $end
+$var wire 1 /# sram_rtl_0|auto_generated|ram_block1a26_PORTBDATAOUT_bus [0] $end
+$var wire 1 0# sram_rtl_0|auto_generated|ram_block1a59_PORTBDATAOUT_bus [0] $end
+$var wire 1 1# sram_rtl_0|auto_generated|ram_block1a27_PORTBDATAOUT_bus [0] $end
+$var wire 1 2# sram_rtl_0|auto_generated|ram_block1a60_PORTBDATAOUT_bus [0] $end
+$var wire 1 3# sram_rtl_0|auto_generated|ram_block1a28_PORTBDATAOUT_bus [0] $end
+$var wire 1 4# sram_rtl_0|auto_generated|ram_block1a61_PORTBDATAOUT_bus [0] $end
+$var wire 1 5# sram_rtl_0|auto_generated|ram_block1a29_PORTBDATAOUT_bus [0] $end
+$var wire 1 6# sram_rtl_0|auto_generated|ram_block1a62_PORTBDATAOUT_bus [0] $end
+$var wire 1 7# sram_rtl_0|auto_generated|ram_block1a30_PORTBDATAOUT_bus [0] $end
+$var wire 1 8# sram_rtl_0|auto_generated|ram_block1a63_PORTBDATAOUT_bus [0] $end
+$var wire 1 9# sram_rtl_0|auto_generated|ram_block1a31_PORTBDATAOUT_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+b11010101 $
+0%
+zE
+zD
+zC
+zB
+zA
+z@
+z?
+z>
+z=
+z<
+z;
+z:
+z9
+z8
+z7
+z6
+z5
+z4
+z3
+z2
+z1
+z0
+z/
+z.
+z-
+z,
+z+
+z*
+z)
+z(
+z'
+z&
+xF
+0G
+1H
+xI
+1J
+1K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+16"
+05"
+14"
+03"
+12"
+01"
+10"
+1/"
+0."
+0-"
+0,"
+0+"
+0*"
+0)"
+0("
+0'"
+0&"
+0%"
+0$"
+0#"
+0""
+0!"
+0~!
+0}!
+0|!
+0{!
+0z!
+0y!
+0x!
+0w!
+0v!
+0u!
+0V"
+0U"
+0T"
+0S"
+0R"
+0Q"
+0P"
+0O"
+0N"
+0M"
+0L"
+0K"
+0J"
+zI"
+zH"
+zG"
+zF"
+zE"
+zD"
+zC"
+zB"
+zA"
+z@"
+z?"
+z>"
+z="
+z<"
+z;"
+z:"
+z9"
+z8"
+z7"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+0}"
+0~"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+0'#
+0(#
+0)#
+0*#
+0+#
+0,#
+0-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+08#
+09#
+$end
+#10000
+1%
+1O
+0F
+1N
+#49000
+1"
+1P
+1F
+#70000
+0%
+0O
+0F
+0N
+#98000
+0"
+0P
+1F
+#120000
+1#
+1T
+0F
+1U
+#147000
+1"
+1P
+1F
+1t!
+1p!
+1l!
+1h!
+1d!
+1`!
+1\!
+1X!
+1T!
+1P!
+1L!
+1H!
+1D!
+1@!
+1<!
+18!
+14!
+10!
+1,!
+1(!
+1$!
+1~
+1z
+1v
+1r
+1n
+1j
+1f
+1b
+1^
+1Z
+1V
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+#147001
+1g"
+1e"
+1a"
+1]"
+1Y"
+1p
+1l
+1d
+1\
+1R
+1q
+1m
+1e
+1]
+1S
+1>
+1?
+1A
+1C
+1E
+#170000
+0#
+0T
+0F
+0U
+#196000
+0"
+0P
+1F
+#245000
+1"
+1P
+0F
+0t!
+0p!
+0l!
+0h!
+0d!
+0`!
+0\!
+0X!
+0T!
+0P!
+0L!
+0H!
+0D!
+0@!
+0<!
+08!
+04!
+00!
+0,!
+0(!
+0$!
+0~
+0z
+0v
+0r
+0n
+0j
+0f
+0b
+0^
+0Z
+0V
+z&
+z'
+z(
+z)
+z*
+z+
+z,
+z-
+z.
+z/
+z0
+z1
+z2
+z3
+z4
+z5
+z6
+z7
+z8
+z9
+z:
+z;
+z<
+z=
+z>
+z?
+z@
+zA
+zB
+zC
+zD
+zE
+#294000
+0"
+0P
+1F
+#343000
+1"
+1P
+0F
+#392000
+0"
+0P
+1F
+#441000
+1"
+1P
+0F
+#490000
+0"
+0P
+1F
+#539000
+1"
+1P
+0F
+#588000
+0"
+0P
+1F
+#637000
+1"
+1P
+0F
+#686000
+0"
+0P
+1F
+#735000
+1"
+1P
+0F
+#784000
+0"
+0P
+1F
+#833000
+1"
+1P
+0F
+#882000
+0"
+0P
+1F
+#931000
+1"
+1P
+0F
+#980000
+0"
+0P
+1F
+#1000000

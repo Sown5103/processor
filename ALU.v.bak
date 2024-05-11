@@ -1,0 +1,35 @@
+module ALU (
+  input [31:0] A,
+  input [31:0] B,
+  input s[2:0],
+  output reg [31:0] result,
+  output reg overflow
+);
+
+  always @(s) begin
+		case (s)
+		0: result=~A;
+		1: result = A and B;
+		2: result = A xor B;
+		3: result = A or B;
+		4: begin 
+				result = A - 1;
+				overflow = (A[31] == 1 && result[31] == 0);
+			end
+		5: begin
+				result = A + B;
+				overflow = (A[31] == 0 && B[31] == 0 && result[31] == 1) || (A[31] == 1 && B[31] == 1 && result[31] == 0);
+			end
+		6: begin
+				result = A - B;
+				overflow = (A[31] == 1 && B[31] == 0 && result[31] == 0) || (A[31] == 0 && B[31] == 1 && result[31] == 1);
+			end
+		7:	begin 
+				result = A + 1;
+				overflow = (A[31] == 0 && result[31] == 1);
+			end
+		
+  end
+
+endmodule
+

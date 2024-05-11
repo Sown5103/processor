@@ -1,0 +1,93 @@
+module controller(
+input [5:0] opcode,
+input reset,
+output reg RegDst, MemRead, MemWrite, MemToReg, ALUSrc, RegWrite;
+output reg[1:0] ALUop;
+);
+always @ (*)
+if (reset)
+begin
+	ALUop = 0;
+	RegDst = 0;
+	MemRead = 0;
+	MemWrite = 0;
+	MemtoReg = 0;
+	ALUsrc = 0;
+	RegWrite = 0;
+end
+else
+begin
+	case (opcode)
+	1: // add
+	begin
+		ALUop = 2;
+		RegDst = 1;
+		MemRead = 0;
+		MemWrite = 0;
+		MemtoReg = 0;
+		ALUsrc = 0;
+		RegWrite = 1;
+	end
+	3: // sub
+	begin
+		ALUop = 3;
+		RegDst = 1;
+		MemRead = 0;
+		MemWrite = 0;
+		MemtoReg = 0;
+		ALUsrc = 0;
+		RegWrite = 1;
+	end
+	5: // and
+	begin
+		ALUop = 0;
+		RegDst = 1;
+		MemRead = 0;
+		MemWrite = 0;
+		MemtoReg = 0;
+		ALUsrc = 0;
+		RegWrite = 1;
+	end
+	6: // or
+	begin
+		ALUop = 1;
+		RegDst = 1;
+		MemRead = 0;
+		MemWrite = 0;
+		MemtoReg = 0;
+		ALUsrc = 0;
+		RegWrite = 1;
+	end
+	2: // lw
+	begin
+		ALUop = 2;
+		RegDst = 0;
+		MemRead = 1;
+		MemWrite = 0;
+		MemtoReg = 1;
+		ALUsrc = 1;
+		RegWrite = 1;
+	end
+	4: // sw
+	begin
+		ALUop = 2;
+		RegDst = 0;
+		MemRead = 0;
+		MemWrite = 1;
+		MemtoReg = 1;
+		ALUsrc = 1;
+		RegWrite = 0;
+	end
+	default:
+	begin
+		ALUop = 0;
+		RegDst = 0;
+		MemRead = 0;
+		MemWrite = 0;
+		MemtoReg = 0;
+		ALUsrc = 0;
+		RegWrite = 0;
+	end
+	endcase
+end
+endmodule
